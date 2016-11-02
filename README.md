@@ -36,7 +36,7 @@ python centroid.py \path\to\data threshold minimum_area mask_name
 python slice_fit.py \path\to\data centroid_1_x centroid_1_y centroid_2_x centroid_2_y
 ```
 
-### Without Masking
+### Centroiding Without Masking
 
 Using this script with the provided [sample.dat](sample.dat).
 
@@ -64,17 +64,24 @@ This will generate 4 files:
 
 [sample_CENTROIDS.txt](sample_CENTROIDS.txt)
 
-Now using those centroid points from we can fit the data along the slice between the two centroid points.
+### Slice Through Centroid and Multipeak Fitting
+
+Now using those centroid points from the output of `centroid.py` we can fit the data along the slice between the two centroid points.
 
 ```
 C:\path\to\script> python slice_fit.py sample.dat 78 156 148 162
 ```
 This generates 5 files:
 * an .png visualizing the line of data sliced through the centroids
+
 ![centroids](./images/sample_LINE.png)
+
 * .png and .pdf demonstrating the multi-peak gaussian fitting along the data slice
+
 ![centroids](./images/sample_FITS.png)
+
 * text file containg the data slice, fits, fits sum, residuals
+
 [sample_CENTROIDS.txt](sample_FITS.txt)
 
 
