@@ -3,7 +3,8 @@ A velocity map imaging processing suite for automated centroiding, masking, mult
 
 ## Overview
 
-**velocity-map-image-processing** is designed to process 2D imaging data recorded from a velocity-map imaging apparatus where two distinct velocity components are present. However, this could be adpated/applied to any image data where two components are present. For a complete description of the implimentation of these scripts in my research, see the motivation section at the end.
+**velocity-map-image-processing** is designed to process 2D imaging data recorded from a velocity-map imaging apparatus where two distinct velocity components are present. However, this could be adpated/applied to any image data where two components are present. For a complete description of the implimentation of these scripts in my research and a description of the data, see the motivation section at the end.
+
 These scripts were created for use with python 2.7.6 on the Windows command line. While not tested on a Posix system, they should theoretically work. Image data is processed according to the following steps.
 
 * Part 1: Centroid (`centroid.py`)
