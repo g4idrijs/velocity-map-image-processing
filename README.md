@@ -53,10 +53,15 @@ area minimum = 30
 
 This will generate 4 files:
 * grey scale .png of the subset data
+
 ![centroids](./images/sample.png)
+
 * .png and .pdf indicating the centroids, thresholded image, and contour regions
+
 ![centroids](./images/sample_CENTROIDS.png)
+
 * text file containg the centroids and parameters
+
 [sample_CENTROIDS.txt](sample_CENTROIDS.txt)
 
 Now using those centroid points from we can fit the data along the slice between the two centroid points.
